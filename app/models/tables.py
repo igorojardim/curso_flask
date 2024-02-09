@@ -1,7 +1,7 @@
 from app import db
 
 class User(db.Model):
-    __tablename__: 'users'
+    __tablename__= 'users'
     __table_args__ = {'schema': 'db_flask'}
 
     id = db.Column(db.Integer, primary_key=True)
@@ -23,7 +23,7 @@ class User(db.Model):
    
 
 class Post(db.Model):
-    __tablename__: 'posts'
+    __tablename__ = 'posts'
     __table_args__ = {'schema': 'db_flask'}
 
     id = db.Column(db.Integer, primary_key=True)
